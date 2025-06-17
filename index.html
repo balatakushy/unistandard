@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert and compare university marks between UK institutions including Russell Group and Oxbridge. Perfect for A-Level and IB students planning their UCAS applications.">
+    <meta name="keywords" content="university grade converter UK, Russell Group grade comparison, Oxbridge marks, UCAS points calculator, A-Level to degree classification, UK university grade boundaries, Sixth Form grade calculator, Upper Sixth study tool, UK degree classification, university grade predictor, academic grading UK, degree mark converter, university admissions tool, UK higher education, degree classification calculator">
+    <meta name="author" content="UniStandard UK">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="UniStandard | University Comparison">
+    <meta property="og:description" content="Compare and convert university grades between UK institutions including Russell Group and Oxbridge. Essential for Sixth Form and UCAS applicants.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="geo.region" content="GB" />
+    <meta name="geo.placename" content="United Kingdom" />
+    <title>UniStandard | University Comparison</title>
+    <link rel="canonical" href="https://unistandard.co.uk" />
+    <link rel="alternate" hreflang="en-gb" href="https://unistandard.co.uk" />
+    <meta name="geo.position" content="51.5074;-0.1278">
+    <meta name="ICBM" content="51.5074, -0.1278">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "UniStandard UK",
+      "description": "Compare and convert university grades between UK institutions including Russell Group and Oxbridge. Essential tool for Sixth Form students and UCAS applicants.",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Web",
+      "keywords": ["Russell Group", "Oxbridge", "UCAS", "A-Levels", "IB", "BTEC", "Sixth Form", "Upper Sixth", "UK university grades", "degree classification"],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "publisher": {
+        "@type": "EducationalOrganization",
+        "name": "UniStandard UK",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "GB"
+        }
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Students in UK Sixth Form education"
+      },
+      "educationalUse": ["assignment", "self-education", "university application preparation"]
+    }
+    </script>
+</head>
+<body itemscope itemtype="https://schema.org/WebPage">
+    <div class="container" role="main">
+        <header itemscope itemtype="https://schema.org/WPHeader">
+            <h1>UniStandard</h1>
+            <p>Compare your university marks. By using this application, you agree to our <a href="#" id="disclaimer-link">terms, conditions, and disclaimer</a>. Get in touch with us <a href="https://rickrollwebsite.univer.se/secret" target="_blank" rel="noopener noreferrer">here</a>.</p>
+            
+            <!-- Disclaimer Modal -->
+            <div id="disclaimer-modal" class="modal">
+                <div class="modal-content">
+                    <div class="disclaimer-text">
+                        <p>This application is provided solely as an educational and informational tool for general interest purposes. The grade comparisons and "crop factors" presented are entirely subjective estimates based on publicly available information and general perceptions, and should not be relied upon for any official academic, professional, or decision-making purposes.</p>
+                        <p>The crop factors and academic rigour assessments used in this application are subjective opinions only. They do not represent official university policies or standards, verified academic data or research, endorsed comparisons by any educational institution, or accurate predictors of actual grade outcomes. These assessments are based on general perceptions and should be understood as such.</p>
+                        <p>We make no warranties or representations regarding the accuracy, completeness, or reliability of any information provided. University marking schemes, academic standards, and grade boundaries vary significantly and change over time. Actual grade outcomes depend on numerous factors including specific courses, departments, assessment methods, and individual circumstances that cannot be captured in a simple comparison tool.</p>
+                        <p>This tool should never be used for university applications or admissions decisions, employment applications or curriculum vitae preparation, official academic transcripts or records, professional or licensing requirements, or any legal or contractual purposes. It is designed purely for educational curiosity and general comparison purposes only.</p>
+                        <p>To the fullest extent permitted by law, we disclaim all liability for any direct, indirect, incidental, consequential, or special damages arising from your use of this application, including but not limited to decisions made based on the information provided. Users assume all risks associated with using this comparative tool.</p>
+                        <p>This application is not affiliated with, endorsed by, or connected to any UK university or educational institution. The inclusion of any university name does not imply endorsement or approval of this tool or its methodology by those institutions.</p>
+                        <p>Users are solely responsible for verifying any information independently and should consult official university sources for accurate and current academic information. Always refer to official university documentation and speak with admissions or academic advisors for authoritative guidance on academic standards and grade comparisons.</p>
+                        <p>Information and crop factors may be updated or modified at any time without notice. We recommend checking official university sources for the most current information regarding academic standards and grading practices.</p>
+                        <p>By using this application, you acknowledge that you have read, understood, and agree to these terms, conditions, and disclaimer.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main itemscope itemtype="https://schema.org/WebApplication">
+            <div class="converter">
+                <div class="input-group">
+                    <label for="university-input">University</label>
+                    <input type="text" id="university-input">
+                    <div id="university-suggestions" class="suggestions"></div>
+                </div>
+                <div class="input-group">
+                    <label for="mark-input">Mark</label>
+                    <input type="number" id="mark-input" min="0" max="100" step="0.01">
+                </div>
+            </div>
+            <div id="results"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <footer style="display:none;" aria-hidden="true">
+        <p>UniStandard - UK University Grade Comparison Tool. Compare academic grades between Russell Group, Oxbridge, and other UK universities. Essential for Sixth Form students planning their UCAS applications and university choices.</p>
+        <p>© 2025 UniStandard UK. All rights reserved. | A-Level, IB, BTEC, and other UK qualifications comparison tool.</p>
+        <p>Key terms: Russell Group, Oxbridge, UCAS points, Sixth Form, Upper Sixth, A-Levels, IB, BTEC, degree classification, UK university admissions, higher education UK</p>
+    </footer>
+</body>
+</html>
